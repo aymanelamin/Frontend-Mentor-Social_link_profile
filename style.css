@@ -1,0 +1,119 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font:inherit;
+}
+
+img, svg {
+  display: block;
+  max-width: 100%;
+}
+
+:root {
+    --background-color:hsl(0, 0%, 8%);
+    --main-container-color:hsl(0, 0%, 12%);
+    --name-color:hsl(0, 0%, 100%);
+    --backgroun-link-color:hsl(0, 0%, 20%);
+    --address-color:hsl(75, 94%, 57%);
+}
+
+body {
+    height: 100vh;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    background-color: var(--main-container-color);
+    text-align: center;
+    width: 88%;
+    padding: 5%;
+    border-radius: 3vw;
+}
+
+@media screen and (min-width:600px) {
+    .main-container { 
+        width: 25%;
+        padding: 2% 2.5%;
+        border-radius: 1vw;  
+    }
+    
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+}
+
+.jessica-img {
+    margin: auto;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    width: 25%;
+    margin-bottom: 7%;
+}
+
+.name {
+    color: var(--name-color);
+    font-size: 7vw;
+    margin-bottom: 2%;
+    font-weight:700;
+}
+
+@media screen and (min-width:600px) {
+    .name {
+        font-size: 1.5vw;
+    }
+}
+
+.address {
+    color: var(--address-color);
+    font-size: 4.1vw;
+    margin-bottom: 9%;
+    font-weight:600;
+}
+
+@media screen and (min-width:600px) {
+    .address {
+        font-size: .9vw;
+    }
+}
+
+.jop-title {
+    color: var(--name-color);
+    margin-bottom: 7%;
+    font-size: 3.85vw;
+}
+
+@media screen and (min-width:600px) {
+    .jop-title {
+        font-size: .9vw;
+    }
+}
+
+.button {
+    color: var(--name-color);
+    background-color: var(--backgroun-link-color);
+    padding: 4.5%;
+    margin: 1.8% 0;
+    border-radius: 3vw;
+    font-weight: 600;
+    font-size: 3.85vw;
+}
+
+@media screen and (min-width:600px) {
+    .button {
+        font-size: 1vw;
+        border-radius: 1vw;
+    }
+}
+
+.button:hover {
+    background-color: var(--address-color);
+    cursor: pointer;
+}
