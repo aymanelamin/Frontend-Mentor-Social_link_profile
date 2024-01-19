@@ -36,15 +36,6 @@ body {
     border-radius: 3vw;
 }
 
-@media screen and (min-width:600px) {
-    .main-container { 
-        width: 25%;
-        padding: 2% 2.5%;
-        border-radius: 1vw;  
-    }
-    
-}
-
 .links {
     display: flex;
     flex-direction: column;
@@ -58,6 +49,8 @@ body {
     margin-bottom: 7%;
 }
 
+
+
 .name {
     color: var(--name-color);
     font-size: 7vw;
@@ -65,11 +58,6 @@ body {
     font-weight:700;
 }
 
-@media screen and (min-width:600px) {
-    .name {
-        font-size: 1.5vw;
-    }
-}
 
 .address {
     color: var(--address-color);
@@ -78,11 +66,7 @@ body {
     font-weight:600;
 }
 
-@media screen and (min-width:600px) {
-    .address {
-        font-size: .9vw;
-    }
-}
+
 
 .jop-title {
     color: var(--name-color);
@@ -90,11 +74,6 @@ body {
     font-size: 3.85vw;
 }
 
-@media screen and (min-width:600px) {
-    .jop-title {
-        font-size: .9vw;
-    }
-}
 
 .button {
     color: var(--name-color);
@@ -106,14 +85,40 @@ body {
     font-size: 3.85vw;
 }
 
-@media screen and (min-width:600px) {
-    .button {
-        font-size: 1vw;
-        border-radius: 1vw;
-    }
-}
 
 .button:hover {
     background-color: var(--address-color);
     cursor: pointer;
 }
+
+@media screen and (min-width:800px) {
+    .main-container { 
+        width: 25%;
+        padding: 2% 2.5%;
+        border-radius: 1vw;  
+    }
+
+    .jessica-img {
+        width: 30%;
+    } 
+    
+    .name {
+        font-size: 1.5vw;
+    }
+
+    .address {
+        font-size: .9vw;
+    }
+    
+    .jop-title {
+        font-size: .9vw;
+    }
+
+    .button {
+        font-size: 1vw;
+        border-radius: 1vw;
+        margin: 2.2% 0;
+    }
+    
+}
+
